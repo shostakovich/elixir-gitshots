@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Gitshots - Home</title>
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+</head>
+<body>
+  <h1>Commit Snapshots of Robert Curth</h1>
+  <ol>
+    <%= lc shot inlist @shots do %>
+     <li><img width=560 src="/static/originals/<%= shot %>" /></li>
+   <% end %>
+  </ol>
+</body>
+</html>
